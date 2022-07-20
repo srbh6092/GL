@@ -7,6 +7,7 @@ public class Hospital {
 		Ambulance amb1 = new Ambulance("UP53 DZ 2083","Binod",9876543210L);
 		System.out.println(amb1.toString());
 		Patient vinod = new Patient("Vinod", 3, 297, "B-024",1024);
+		Patient binod = new Patient("Vinod", 3, 297, "B-024",1024);
 		System.out.println(vinod.toString());
 	}
 }
