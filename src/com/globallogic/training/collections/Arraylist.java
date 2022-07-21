@@ -2,6 +2,7 @@ package com.globallogic.training.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 
 class Students {
@@ -100,6 +101,9 @@ public class Arraylist {
 		Collections.sort(java4,(a,b)->a.rollNo-b.rollNo);
 		for(Students student: java4)
 			System.out.println(student);
+		
+		
+		
 		
 		
 	}
