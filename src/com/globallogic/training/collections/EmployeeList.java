@@ -155,16 +155,25 @@ public class EmployeeList {
 
 	private static void sort() {
 		
+		//Use any of the 4 methods
+		
+		//Method 1
 		//Without creating custom Comparator in separate class
+		//Using lambda function
 		Collections.sort(list,(a,b)->a.name.compareTo(b.name));
 		
+		//Method 2
 		//Using Comparable in model class
+		//Using lambda function
 		Collections.sort(list,(a,b)->a.compareTo(b));
 		
-		//Using Custom Comparator outer class within the java file
+		//Method 3
+		//Using custom Comparator outer class within the java file
+		//NameSortComparator class is at the top in this java file
 		Collections.sort(list, new NameSortComparator());
 		
-		//Using Custom Comparator within sort function
+		//Method 4
+		//Using custom Comparator within sort function
 		Collections.sort(list, new Comparator<Employee>(){
 
 			@Override
