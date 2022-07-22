@@ -29,4 +29,9 @@ class Employee implements Comparable<Employee>{
 	public int compareTo(Employee o) {
 		return this.getName().compareTo(o.getName());
 	}
+	public boolean isSame(Employee e) {
+		if(this.name.equalsIgnoreCase(e.name) && this.salary==e.salary)
+			return true;
+		return false;
+	}
 }

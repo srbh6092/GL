@@ -8,7 +8,7 @@ public class Hospital {
 		System.out.println(amb1.toString());
 		Patient vinod = new Patient("Vinod", 3, 297, "B-024",1024);
 		Patient binod = new Patient("Vinod", 3, 297, "B-024",1024);
-		System.out.println(vinod.toString());
+		System.out.println(vinod.hashCode()==binod.hashCode());
 	}
 }
 
