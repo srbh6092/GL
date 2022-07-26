@@ -29,7 +29,7 @@ public class Lambda {
 		Print printObj = (s) ->System.out.println(s);
 		SumOfNaturalNumbers sumOfNaturalNumbersObj = (n) -> {
 			int sum=0;
-			while(n-->0) sum+=n;
+			while(n>0) sum+=n--;
 			return sum;
 		};
 		System.out.println("Odd or Even: "+oddOrEvenObj.oddOrEven(57));
