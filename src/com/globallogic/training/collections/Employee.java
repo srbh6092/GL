@@ -1,6 +1,6 @@
 package com.globallogic.training.collections;
 
-class Employee implements Comparable<Employee>{
+ public class Employee implements Comparable<Employee>{
 	String name;
 	int salary;
 	public Employee() {

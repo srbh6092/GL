@@ -21,6 +21,7 @@ interface SumOfNaturalNumbers{
 	int sumOfNaturalNumbers(int a);
 }
 
+
 public class Lambda {
 	public static void main(String[] args) {
 		Greater greaterObj = (a,b) -> a>b?a:b;
@@ -32,8 +33,8 @@ public class Lambda {
 			while(n>0) sum+=n--;
 			return sum;
 		};
-		System.out.println("Odd or Even: "+oddOrEvenObj.oddOrEven(57));
-		System.out.println("Greater: "+greaterObj.greater(10,57));
+		System.out.println("Odd or Even: "+oddOrEvenObj.oddOrEven(35));
+		System.out.println("Greater: "+greaterObj.greater(100,57));
 		System.out.println("Smaller: "+smallerObj.smaller(10,57));
 		printObj.print("Hello World");
 		System.out.println("Sum of 100: "+sumOfNaturalNumbersObj.sumOfNaturalNumbers(100));
